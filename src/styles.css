@@ -1,0 +1,356 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+a {
+  color: #ff6b6b; /* Bright red for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4757;
+}
+
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+}
+
+.navbar-brand h1 {
+  color: #6F4F27 !important;
+}
+.navbar-brand span {
+  color: #6F4F27 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #090808;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffe66d;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url('../src/assets/hero\ img.png');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  padding: 20px 0 ;
+}
+
+
+#hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+
+}
+
+
+#hero p {
+  font-size: 1.5rem;
+
+}
+
+#hero .btn-primary {
+  background-color: #ffe66d;
+  color: #ff6b6b;
+  border: none;
+}
+
+#hero .btn-primary:hover {
+  background-color: #ff4757;
+  color: #fff;
+}
+
+/* Menu Section */
+.menu-section{
+  background-color: #a64c443e !important;
+}
+#menu h2{
+  padding: 50px 0 0 0;
+}
+#menu .card {
+  background-color: #fff;
+  border: 1px solid #ffe66d; /* Bright yellow border */
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu .card:hover {
+  transform: translateY(-5px);
+  background-color: #ff6b6b;
+  color: #fff;
+  border-color: #ff4757;
+}
+
+#menu .card-title {
+  font-weight: bold;
+}
+
+#menu .btn-outline-primary {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+#menu .btn-outline-primary:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+/* Offers Section */
+#offers {
+  background-color: #ffe66d; /* Light yellow background */
+  padding: 50px 0;
+}
+
+#offers h2 {
+  color: #ff6b6b;
+  padding: 40px 0 0 0 !important;
+}
+
+#offers .card {
+  background-color: #fff;
+  border: 1px solid #ff6b6b;
+}
+
+#offers .card:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+#offers .btn-outline-primary {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+#offers .btn-outline-primary:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+/* About Section */
+#about {
+  background-color: #f7f7f7;
+  padding: 20px 0 !important;
+}
+
+.about-section{
+  background-color: #f4f4f4 !important;
+}
+#about h2 {
+  color: #ff6b6b;
+  padding: 60px 0 0 0 !important;
+
+}
+
+/*Testimonial*/
+#testimonial h2 {
+  color: #ff6b6b;
+  padding: 60px 0 0 0 !important;
+
+}
+/* Contact Section */
+.contact-section{
+  background-color: #8b602b88 !important;
+}
+#contact {
+  background-color: #ffe66d;
+  padding: 50px 0;}
+
+#contact h2 {
+  color: #ff6b6b;
+  padding: 50px 0 !important;
+
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ffe66d;
+}
+
+footer a:hover {
+  color: #ff6b6b;
+}
+
+/* Buttons */
+.btn-primary, .btn-outline-primary {
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Queries */
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  #menu .card-title {
+    font-size: 1.25rem;
+  }
+
+  #offers h2 {
+    font-size: 1.75rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet devices (between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  #hero h1 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    margin-bottom: 25px;
+  }
+
+  #menu .card-title {
+    font-size: 1.5rem;
+  }
+
+  #offers h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Larger tablets and small desktops (768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  #hero h1 {
+    font-size: 3.5rem;
+  }
+
+  #hero p {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  #menu .card-title {
+    font-size: 1.75rem;
+  }
+
+  #offers h2 {
+    font-size: 2.25rem;
+  }
+
+  footer {
+    font-size: 1.1rem;
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large desktops (992px and up) */
+@media (min-width: 992px) {
+  #hero h1 {
+    font-size: 4rem;
+  }
+
+  #hero p {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 40px;
+  }
+
+  #menu .card-title {
+    font-size: 2rem;
+  }
+
+  #offers h2 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+
+  .navbar-brand {
+    font-size: 2.25rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.3rem;
+  }
+}
+section {
+  padding: 80px 0 !important;
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
